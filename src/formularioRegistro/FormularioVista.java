@@ -46,6 +46,7 @@ public class FormularioVista extends javax.swing.JFrame {
         femenino = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         mensaje = new javax.swing.JLabel();
+        limpiar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(new java.awt.Color(255, 51, 153));
@@ -103,6 +104,10 @@ public class FormularioVista extends javax.swing.JFrame {
 
         mensaje.setForeground(new java.awt.Color(255, 0, 51));
 
+        limpiar.setBackground(new java.awt.Color(153, 255, 255));
+        limpiar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        limpiar.setText("limpiar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -112,9 +117,6 @@ public class FormularioVista extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(210, 210, 210)
                         .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(254, 254, 254)
-                        .addComponent(enviar))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,7 +151,12 @@ public class FormularioVista extends javax.swing.JFrame {
                                         .addGap(23, 23, 23)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
+                                            .addComponent(apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(254, 254, 254)
+                        .addComponent(enviar)
+                        .addGap(63, 63, 63)
+                        .addComponent(limpiar)))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -177,7 +184,7 @@ public class FormularioVista extends javax.swing.JFrame {
                             .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(contrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
                             .addComponent(masculino)
@@ -187,7 +194,9 @@ public class FormularioVista extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(mensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(46, 46, 46)))
-                .addComponent(enviar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(enviar)
+                    .addComponent(limpiar))
                 .addGap(27, 27, 27))
         );
 
@@ -261,6 +270,7 @@ public class FormularioVista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    protected javax.swing.JButton limpiar;
     protected javax.swing.JRadioButton masculino;
     protected javax.swing.JLabel mensaje;
     protected javax.swing.JTextField nombres;
